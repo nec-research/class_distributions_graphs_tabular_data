@@ -1,0 +1,18 @@
+splitter:
+  root: DATA_SPLITS/
+  class_name: pydgn.data.splitter.SingleGraphSplitter
+  args:
+    n_outer_folds: 10
+    n_inner_folds: 1
+    seed: 42
+    stratify: True
+    shuffle: True
+    inner_val_ratio: 0.1
+    outer_val_ratio: 0.1
+    test_ratio: 0.1  # in this case test_ratio will always be used and will apply to the number of total edges
+dataset:
+  root: DATA/
+  class_name: dataset.Waveform
+  args:
+    root: DATA/
+    name: waveform

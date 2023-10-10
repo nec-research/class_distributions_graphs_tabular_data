@@ -1,0 +1,3 @@
+pip install pydgn==1.3.0.post1
+pip install jupyter matplotlib seaborn sklearn
+pip install uci-dataset unlzw3 requests zipfile openpyxl
