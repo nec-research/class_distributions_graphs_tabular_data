@@ -200,7 +200,7 @@ class UCIDatasetInterface(DatasetInterface):
             y = y.replace(v, counter)
             counter += 1
 
-        return df.to_numpy(), y.to_numpy()
+        return df.to_numpy().astype(float), y.to_numpy()
 
     def __init__(
         self,
